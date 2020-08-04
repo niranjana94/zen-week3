@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Request for new PAN card</title>
+</head>
+<body>   
+    
+    <form autocomplete="off">
+        <h3 style="text-align:center;" >Request For New PAN Card Or/And Changes Or Correction in PAN Data</h3>
+        <p style="text-align:center;" >Fields marked with * (asterisk) are mandatory. . To avoid mistake(s), please refer guidelines and instructions . </p>
+
+        <label for="Citizen"><b>*Whether citizen of India</b></label>
+        <input type="radio" id="Yes" name="Citizen" required>
+        <label for="Citizen">Male</label>
+        <input type="radio" id="No" name="Citizen">
+        <label for="Citizen">female</label><br>
+
+        <label for="pan"><b>*Permanent Account Number(PAN)</b> </label>
+        <input type="text" name="pan" id="pan" required><br>
+
+        <label for="name"><b>*1.Name</b></label><br>
+        <label for="title"><b>Title</b></label>
+        <label for="title">Shri/Mr</label>
+        <input type="radio" id="Yes" name="title" required>
+        <label for="title">Smt./Mrs.</label>
+        <input type="radio" id="No" name="title">
+        <label for="title">kumari/Ms</label>
+        <input type="radio" id="Yes" name="title" required>
+        <label for="title">M/s</label><br>
+        <!--<input type="radio" id="No" name="title" disabled>-->
+
+        <br>
+        <label for="lastname"><b>LastName/surname</b></label>
+        <input type="text" name="lastname" id="lastname" required>
+
+        <label for="firstname"><b>Firstname</b></label>
+        <input type="text" name="firstname" id="firstname" required><br>
+
+        <label for="panname"><b>*Name as you woud like it printed(prefix like shri,smt,kumari,Late,Dr,CA,Mr,Mrs etc are not allowed)</b></label>
+        <input type="text" name="panname" id="panname" required><br>
+
+        <label for="parents"><b>Details of Parents(prefix like shri,smt,kumari,Late,Dr,CA,Mr,Mrs etc are not allowed</b>label><br>
+        <label for="singleparent"><b>Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only</b></label><br>
+        <label for="singleparent">yes</label>
+        <input type="radio" id="Yes" name="singleparent" >
+        <label for="singleparent">no</label>
+        <input type="radio" id="No" name="singleparent"><br>
+
+        <label for="fathername"><b>*2.Father's Name(mandatory field.Even married women should give father's name only)</b></label><br>
+        <label for="fatherlastname"><b>LastName/Surname</b></label>
+        <input type="text" name="fatherlastname" id="fatherlastname" required>
+        <label for="fatherfirstname"><b>FirstName</b></label>
+        <input type="text" name="fatherfirstname" id="fatherfirstname" required>
+        <label for="fathermiddlename"><b>MiddleName</b></label>
+        <input type="text" name="fathermiddlename" id="fathermiddlename" required><br>
+
+        <label for="mothername">3.Mother's Name(this field is optional)</label><br>
+        <label for="motherlastname"><b>LastName/surname</b></label>
+        <input type="text" name="motherlastname" id="motherlastname" required>
+        <label for="motherfirstname"><b>FirstName</b></label>
+        <input type="text" name="motherfirstname" id="motherfirstname" required>
+        <label for="mothermiddlename"><b>MiddleName</b></label>
+        <input type="text" name="mothermiddlename" id="mothermiddlename" required><br>
+
+        <label for="cardparentname"><b>*4.Select Parent name which is to be printed on card</b></label><br>
+        <label for="cardparentname">(In case no ption is provided then pan card will be issued with father's name)</label><br>
+        <label for="cardparentname">Father name</label>
+        <input type="radio" id="Fathername" name="cardparentname" >
+        <label for="cardparentname">Mother name</label>
+        <input type="radio" id="Mothername" name="cardparentname"><br>
+
+        <label><b>*5. Date of Birth/Incorporation/Agreement/Partnership or Trust Deed/Formation of Body of Individuals/
+            Association of Persons</b></label><br>
+        <label for="dob">DD  MM YEAR</label>
+            <br>
+            <select name="DD">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+            </select>
+            <select name="MM">
+                <option value="JAN">JAN</option>
+                <option value="FEB">FEB</option>
+                <option value="MAR">MAR</option>
+            </select>
+            <select name="YEAR">
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+            </select>
+        <br>
+        <label for="Gender"><b>*6.Gender</b></label><br>        
+        <label for="Gender">Male</label>
+        <input type="radio" id="Male" name="Gender" >
+        <label for="Gender">Female</label>
+        <input type="radio" id="Female" name="Gender">
+        <label for="Gender">Transgender</label>
+        <input type="radio" id="Transgender" name="Gender"><br>
+
+        <label for="photomismatch"><b>7.Photomismatch</b></label>
+        <input type="checkbox" id="photomismatch"><br>
+
+        <label for="signmismatch"><b>8.Signaturemismatch</b></label>
+        <input type="checkbox" id="signmismatch"><br>
+
+        <label for="Address"><b>*9.Address for communication </b></label>     
+        <label for="Address">Residential</label>
+        <input type="radio" id="Residential" name="Address" >
+        <label for="Address">Office</label>
+        <input type="radio" id="Office" name="Address"><br>
+
+        <label for="officename"><b>Office Name(to be filled only in case of office address)</b></label>
+        <input type="text" name="officename" id="officename" required><br>
+
+        <label for="flat"><b>Flat/Door/Block no.</b></label>
+        <input type="text" name="flat" id="flat" required><br>
+
+        <label for="building"><b>Name of premises/Building/Village</b></label>
+        <input type="text" name="building" id="building" required><br>
+
+        <label for="road"><b>Road/street/lane/postoffice</b></label>
+        <input type="text" name="road" id="road" required><br>
+
+        <label for="area"><b>Area/Locality/Taluka/Subdivision</b></label>
+        <input type="text" name="area" id="area" required><br>
+
+        <label for="town"><b>Town/City/District</b></label>
+        <input type="text" name="town" id="town" required><br>
+
+        <label for="state"><b>State/Union Territory</b></label>
+            <select id="state" name="state">
+                <option value="Select">Please select</option>
+                <option value="TamilNadu">TamilNadu</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="MP">MP</option>
+                <option value="AP">AP</option>
+            </select><br>
+        
+        <label for="pin"><b>PIN(indicating PIN is mandatory)</b></label>
+        <input type="text" name="pin" id="pin" required><br>
+
+        <label for="country"><b>Country</b></label>
+        <select id="country" name="country">
+            <option value="Select">Please select</option>
+            <option value="IN">India</option>
+            <option value="US">USA</option>
+            <option value="AUS">Australia</option>
+        </select><br>
+
+        <label for="zip"><b>Zip</b></label>
+        <input type="text" name="zip" id="zip" required><br>
+
+        <label for="upload"><b>10.If you desire to update your other address, give required details& submit proof of other address.</b></label>
+        <input id="upload" type="file"><br>
+
+        <label for="number"><b>*11.Telephone No.(country code is complusory)</b></label>
+        <label for="code">Countrycode(ISD)</label>
+        <select id="code" name="code">
+            <option value="Select">Please select</option>
+            <option value="IN">91</option>
+            <option value="US">1</option>
+            <option value="AUS">61</option>
+        </select><br>
+
+        <label for="mob">MobileNo.</label>
+        <input type="radio" id="mob" name="mob" >
+        <label for="mob">Telephone NO.</label>
+        <input type="radio" id="mob" name="mob"><br>
+
+        <label for="area">Area/STD code</label>
+        <input type="text" name="area" id="area" required>
+        <label for="tele">Telephone No/Mobie No</label>
+        <input type="text" name="tele" id="tele" required><br>
+
+        <label for="email">Email ID</label>
+        <input type="text" name="email" id="email" required><br>
+
+        <label for="citi"><b>In case of a citizen of India,then</b></label>     
+        <label for="citi">Aadhar</label>
+        <input type="radio" id="Aadhar" name="citi" >
+        <label for="citi">EID</label>
+        <input type="radio" id="EID" name="citi"><br>
+
+        <label for="aadhar"><b>*12.AADHAAR number</b></label>
+        <input type="text" name="aadhar" id="aadhar" required><br>
+
+        <label for="aadhar"><b>*Name as per AADHAAR letter or as per the enrollment ID of aadhaar app form</b></label>
+        <input type="text" name="aadhar" id="aadhar" required><br>
+
+        <label for="gstn"><b>13.GSTN</b></label>
+        <input type="text" name="gstn" id="gstn" required><br>
+
+        <label for="surrenderedpan"><b>14.Mention other PANs if any,Inadvertently allotted to you.Submit proof of surrendered PANs along with the application</b></label><br>
+        <label for="surrenderedpan1">PAN1</label>
+        <input type="text" name="surrenderedpan1" id="surrenderedpan1" required><br>
+        <label for="surrenderedpan2">PAN2</label>
+        <input type="text" name="surrenderedpan2" id="surrenderedpan2" required><br>
+        <label for="surrenderedpan3">PAN3</label>
+        <input type="text" name="surrenderedpan3" id="surrenderedpan3" required><br>
+        <label for="surrenderedpan4">PAN4</label>
+        <input type="text" name="surrenderedpan4" id="surrenderedpan4" required><br>
+
+        <label for="verify"><b>15.Verification</b></label><br>
+        I/We
+        <input type="text"id="verifyname"> ,the applicant,in the capacity of
+        <select name="Please select">
+            <option value="select">Please select</option>
+            <option value="val1">abc</option>
+            <option value="val2">def</option>
+            
+        </select>  do hereby declare that what is stated above is true to the best of my information and belief.
+        <br>
+        I have enclosed <input type="text"id="doc"> (number of documents) in support of proposed changes/corrections.
+         <br>
+         Place <input type="text"id="place">
+         <br>
+         Verified today the 03-08-2020
+         <br>
+         I/We have enclosed
+         <select name="Please select">
+            <option value="abc">abc</option>
+            <option value="def">def</option>
+         </select>
+         <br>
+         as proof of identity
+         <select name="Please select">
+            <option value="abc">abc</option>
+            <option value="def">def</option>
+         </select>
+            as proof of address 
+            <select name="Please select">
+                <option value="abc">abc</option>
+                <option value="def">def</option>
+            </select>
+            as proof of Date of Birth
+            <select name="Please select">
+                <option value="abc">abc</option>
+                <option value="def">def</option>
+            </select>
+            as proof of PAN alloted.
+            <br>
+        
+        <label for="wish"><b>Whether you wish to have?</b></label>     
+        <label for="wish">Physical PAN card &e-PAN card</label>
+        <input type="radio" id="phyPAN" name="wish" >
+        <label for="wish">Only e-PAN card</label>
+        <input type="radio" id="epan" name="wish"><br>
+
+        <label><b>Other Details</b></label><br>
+        <label>1.Depository Account Details</label><br>
+        <label for="dp">DP ID:</label>
+        <input type="text" name="dp" id="dp" required>
+        <label for="clientid">Client ID:</label>
+        <input type="text" name="clientid" id="clientid" required><br>
+        <label>2.Payment Details</label><br>
+        <input type="radio" id="onlinepay" name="onlinepay"><br>
+        <label for="onlinepay">Online Payment</label><br>
+
+        <label for="paperlesspan">For paperless PAN application</label><br>
+        <label for="paperlesspan">Yes</label>
+        <input type="radio" id="yes" name="paperlesspan">
+        <label for="paperlesspan">No</label>
+        <input type="radio" id="no" name="paperlesspan"><br>
+
+        <input type="radio">
+        <label>DSC</label>            
+            <select name="Please select">
+                <option value="abc">abc</option>
+                <option value="def">def</option>
+            </select><br>
+        
+        <label>Upload Photo</label>
+        <input type="file"><br>
+
+        <label>Upload signature</label>
+        <input type="file"><br>
+
+        <label>Upload document</label>
+        <input type="file"><br>
+
+        <label>ALREADY UPLOADED PHOTO</label>
+        <input type="" id="alreadyupphoto"><br>
+
+        <label>ALREADY UPLOADED SIGNATURE</label>
+        <input type="" id="alreadyupsign"><br>
+
+        <label>ALREADY UPLOADED DOCUMENTS</label>
+        <input type="" id="alreadyupdoc"><br>
+
+        <input type="submit" name="submit" value="submit" id="submitButton">        
+    </form>
+   
+  
+  
+</body>
+</html>
