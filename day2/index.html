@@ -1,360 +1,197 @@
-<!DOCTYPE html>  
-<html>  
-    <head>  
-      
-        <style type="text/css">  
-        .container { 
-            width:600px; 
-            height:1500px; 
-            background-color:grey; 
-            padding-top:20px; 
-            padding-left:15px; 
-            padding-right:15px; 
-            
-        } 
-        #st-box { 
-            float:center; 
-            width:500px; 
-            height:230px; 
-            background-color:white; 
-            border:solid black; 
-            margin-bottom:20px; 
-        } 
-        #nd-box { 
-            float:center; 
-            width:500px; 
-            height:140px;
-            background-color:white;  
-            border:solid black; 
-            margin-bottom:20px; 
-        } 
-        #rd-box { 
-            float:center; 
-            width:500px; 
-            height:200px; 
-            background-color:white; 
-            border:solid black; 
-            margin-bottom:20px; 
-        } 
-        #rth-box { 
-            float:center; 
-            width:500px; 
-            height:185px; 
-            background-color:white; 
-            border:solid black; 
-            margin-bottom:20px; 
-        }
-        #fth-box { 
-            float:center; 
-            width:500px; 
-            height:75px; 
-            background-color:white; 
-            border:solid black; 
-            margin-bottom:20px; 
-        }
-        #xth-box { 
-            float:center; 
-            width:500px; 
-            height:165px; 
-            background-color:white; 
-            border:solid black; 
-            margin-bottom:20px; 
-        }
-        *{
-            box-sizing: border-box;
-        }
-        .column {
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">  
+    .container { 
+        width:904px; 
+        height:1100px; 
+        background-color:white; 
+        border:solid black; 
+               
+    } 
+    .vl {
+      border-left: 6px solid green;
+      height: 500px;
+      position: absolute;
+      left: 50%;
+      margin-left: -3px;
+      top: 0;
+    }
+    .column {
                 float: left;
                 width: 50%;
-                padding: 20px;
-                height:223px;
+                
+                height:1500px;
                 }
-        .column1 {
-                float: left;
-                width: 100%;
-                padding: 15px;
-                height:133px;
-                }
-        .column2 {
-                float: left;
-                width: 100%;
-                padding: 20px;
-                height:195px;
-                }
-        .column3 {
-                float: left;
-                width: 100%;
-                padding: 15px;
-                height:70px;
-                }
-        .column4 {
-                float: left;
-                width: 50%;
-                padding: 20px;
-                height:180px;
-                }
-        .column5 {
-                float: left;
-                width: 50%;
-                padding: 20px;
-                height:160px;
-                }
-              
-        .row:after {
+    .row:after {
                 content: "";
                 display: table;
                 clear: both;
                 }
-        color{
-            color: white;
-        }
-        </style>  
-    </head> 
-      
-    <body> 
-         <center> 
-        <div class="container">             
-            
-                <center>                   
-                <h2 style="font-size:xx-large; color: orangered;"  >OBESITY</h2>
-                <script src='https://kit.fontawesome.com/a076d05399.js'></script> 
-                <i class='fas fa-walking'></i>
-                <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-                <i class='fas fa-skating'></i>
-                <h3 style="color: white; font-size: x-large;">CHILDHOOD STATISTICS</h3>
-            <div id="st-box" class = "row" > <center>
-                    <div class="column" style="background-color:darkgoldenrod;color:white;">
-                        <table style="width:100%;" >
-                            <tr >
-                              <td style="color: black;">
-                                <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-                                <i class='fas fa-male' style='font-size:24px'></i>
-                                <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-                                <i class='fas fa-female' style='font-size:24px'></i>
-                                <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-                                <i class='fas fa-child' style='font-size:24px'></i>
-                              </td>
-                              <tr >
-                                <td>1 IN 3</td>                                
-                              </tr>
-                              <tr>
-                                <td>children and adolescents(ages 2-19) </td>                                
-                              </tr>
-                              <tr>
-                                <td>ARE OEVRWEIGHT OR OBESE </td>                                
-                              </tr>
-                              <tr>
-                                <td>and almost NONE meet recommended healthy diet and physical activity amount </td>                                
-                              </tr>
-                            </tr>                            
-                          </table>                   
-                      
-                    </div>
-                    <div class="column" style="background-color:lightskyblue;color:white;">
-                        <table style="width:100%">
-                            <tr>
-                              <td>
-                                An Estimated                                
-                              </td>
-                              <tr>
-                                <td>12.5 Million</td>                                
-                              </tr>
-                              <tr>
-                                <td>children (ages 5 years or younger),spend </td>                                
-                              </tr>
-                              <tr>
-                                <td>33 HOURS OR WEEK </td>                                
-                              </tr>
-                              <tr>
-                                <td>in child care settings and consume nearly all of their daily calories </td>                                
-                              </tr>
-                            </tr>                            
-                          </table>               
-                      
-                    </div>
-                </center> 
-            </div> 
-              
-            <div id="nd-box" class ="row" class="div"> 
-                <div class="column1" style="background-color:orangered" >
-                    <table style="width:100%">
-                        <tr >
-                          <td style="font-size: larger;color: white;">
-                                OBESITY IS LINKED TO MORE CHRONIC CONDITIONS THAN:
-                          </td>                          
-                          <td>                               
-                                    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-                                    <i class='fas fa-smoking-ban'></i>
-                                    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-                                    <i class='fas fa-cocktail'></i>
-                                
-                         </td>                                
-                          </tr>
-                          <tr style="color: white;">
-                            <td>increasing the risk of more than 20 preventable diseases,including sleep apnea,astham,heart disease,type2 diabetes,osteoarthritis,high blood pressure, high cholesterol stroke </td>                                
-                          </tr>
-                        </tr>                            
-                      </table>                   
-                  
-                </div>            
-              
-            </div> 
-              
-            <div id="rd-box" class = "row" > 
-                    <div class="column2" style="background-color:skyblue;color:white;">
-                        <table style="width:100%">
-                            <th>
-                                RISK FACTORS
-                                <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-                                <i style="color: black;" class='fas fa-exclamation-triangle'></i>
-                            </th>
-                            <tr>
-                              <td>
-                                children in their early teens who are obese and who have high triglyceride levels have arteries silmilar to those of 45years olds.
-                              </td>
-                              <td>
-                                children who have are overweight from ages of 7 to 13 may develop heart disease as early as 25.
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Obese children as yung as age 3 show indicators for developing heart disease later in life.
-                              </td>
-                              <td>
-                                Obese children are twice as likely to die before age 55 than their slimmer peers.
-                              </td>
-                            </tr>                            
-                          </table>   
-                      
-                    </div>
-             </div>
-            
-             <div id="rth-box" class = "row"> 
-                <div class="column4" style="background-color:coral;color:white;">
-                    <table style="width:100%">
-                        <tr>
-                          <td>
-                           FRENCH FRIES
-                          </td>
-                          <tr>
-                            <td>are the most common vegetable that children eat,comprising</td>                                
-                          </tr>
-                          <tr>
-                            <td>25% </td>                                
-                          </tr>
-                          <tr>
-                            <td>of their vegetable intake</td>                                
-                          </tr>
-                          <tr>
-                            <td>
-                                <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-                                <i style="color: yellow;" class='fas fa-bacon'></i>
-                            </td>                                
-                          </tr>
-                        </tr>                            
-                      </table>                   
-                  
-                </div>
-                <div class="column4" style="background-color:darkorange;color:white;">
-                    <table style="width:100%">
-                        <tr>
-                          <td>
-                            <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-                            <i style="color: orangered;" class='fas fa-mug-hot'></i>                              
-                          </td>
-                          <tr>
-                            <td>JUICE</td>                                
-                          </tr>
-                          <tr>
-                            <td>(which may lack important fibre found in whole fruit)makes up </td>                                
-                          </tr>
-                          <tr>
-                            <td>40%</td>                                
-                          </tr>
-                          <tr>
-                            <td>of childrens daily fruit intake</td>                                
-                          </tr>
-                        </tr>                            
-                      </table>               
-                  
-                </div>
-              
-        </div> 
-        <div id="fth-box" class = "row" > 
-            <div class="column3" style="background-color:skyblue;color:white;">
-                <table style="width:100%">
+    div.c {
+            text-align: right;
+          } 
+    </style>
+</head>
+<body> 
+  <center>
+  <div class="container">  
+    <div>        
+        <img src="C:/Users/Prasanna/Desktop/guvi/HTML/resume/task-1.jpeg" alt="" >
+    </div>
+    <div class="v1" class="row">
+      <div class="column">
+        <table style="width:100%;" >
+          <tr>
+            <tr >
+              <td >               
+               <b>PROFILE</b>
+               <br>
+               <p>Innovative optimized solution seeker.Exited to be at the deployment phase of my new career
+                  as a web developer. I am ambitious,adventurous,assiduous,animated and an alliteration advocate.
+               </p>
+              </td>
+            </tr>
+            <tr >
+                <td><b>SKILLS</b>
+                  <br>
+                  <table>
+                    <th><b>Technical Skills</b></th>
                     <tr>
-                      <td style="font-size: larger;">
-                        40-50% of TODDLERS<br> Watch more television than is recommended
-                      </td>
                       <td>
-                        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-                        <i style="color: black" class='fas fa-tv' style='font-size:70px'></i>
-                      </td>
+                      <label for="vol">Javascript</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="range"  id="vol" name="vol" min="0" max="50"><br>
+                      <label for="vol">CSS</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="range" id="vol" name="vol" min="0" max="50"><br>
+                      <label for="vol">HTML</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="range" id="vol" name="vol" min="0" max="50"><br>
+                      <label for="vol">React</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="range" id="vol" name="vol" min="0" max="50"><br>
+                      <label for="vol">Redux</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="range" id="vol" name="vol" min="0" max="50"><br>
+                      <label for="vol">Mongo</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="range" id="vol" name="vol" min="0" max="50"><br>
+                      <label for="vol">Deplyment</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="range" id="vol" name="vol" min="0" max="50"><br>
+                    </td>
                     </tr>
-                                               
-                  </table>   
-              
-            </div>
-        </div>
+                  </table>
 
-        <div id="fth-box" class = "row" > 
-            <div class="column3" style="background-color:darkorange;color:white;">
-                <table style="width:100%">
+                  <table>
+                    <th><b>Additional Skills</b></th>
                     <tr>
-                      <td>
-                        NEARLY 1/2 OF PRESCHOOLERS<br> dont get enough physical activity
-                      </td>
-                      <td>
-                        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-                        <i style="color:darkmagenta;" class='fas fa-bicycle' style='font-size:100px'></i>
-                      </td>
+                    <td>
+                      <label for="vol">Project Management</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="range" id="vol" name="vol" min="0" max="50"><br>
+                      <label for="vol">Recruitment</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="range" id="vol" name="vol" min="0" max="50"><br>
+                      <label for="vol">Business Development</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="range" id="vol" name="vol" min="0" max="50"><br>
+                      <label for="vol">Editing</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="range" id="vol" name="vol" min="0" max="50"><br>
+                      <label for="vol">Fundraising</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="range" id="vol" name="vol" min="0" max="50"><br>
+                    </td>
                     </tr>
-                                               
-                  </table>   
-              
-            </div>
-        </div>
-          
-        <div id="xth-box" class = "row"> 
-            <div class="column5" style="background-color:deepskyblue;color:white;">
-                <table style="width:100%">
-                    <tr>
-                      <td>
-                        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-                        <i style="color: black;" class='fas fa-dollar-sign' style='font-size:64px'></i>
-                      </td>
-                      <tr>
-                        <td>The cost of obesity in United States is staggering totalling about<br>
-                            $147 BILLION
-                        </td>                                
-                      </tr>
-                      
-                    </tr>                            
-                  </table>                   
-              
-            </div>
-            <div class="column5" style="background-color:coral;color:white;">
-                <table style="width:100%">
-                    <tr>
-                      <td>
-                        Children who eat healthy foods and get physical activity have:                               
-                      </td>
-                      <tr>
-                        <td>Fewer school absences<br>
-                            Higher Academic Achievement<br>
-                            Higher self-esteem<br>
-                            Fewer behavioral problems</td>                                
-                      </tr>
-                      
-                    </tr>                            
-                  </table>               
-              
-            </div>
-          
-    </div>          
-            </div> 
-        </center>  
-         
-    </body> 
-</html>                    
+                  </table>
+                </td>                                
+              </tr>
+              <tr>
+                <td><b>WORK EXPERIENCE</b> </td>                                
+              </tr>
+              <tr>
+                <td>Event Manager <br>C3 presents,Washington DC </td>  
+                <td>03/2014-02/2017 </td>                                
+              </tr>
+              <tr>
+                <td>
+                <p>
+                  <ul>
+                    <li>Lead and execute all phase of event planning and production spanning committee recruitment,
+                      training,vendor relationship and onsite facilitation.
+                    </li>
+                    <li>Bought new business to organisation through relentless networking and stewardship which helped the 
+                      company win the bid for the state department summit on the Middle east.
+                    </li>
+                    <li>Exercise fiscal control over budget creation,tracking and reporting. 
+                      Collaborate with employees at all organisational levels to cohesive operations.
+                    </li>
+                  </ul> 
+                </p>
+              </td>
+              </tr>  
+            </tr> 
+          </tr>                           
+          </table>                   
+      
+    </div>
+    <div class="column" >
+        <table style="width:100%">
+          <tr>
+              <tr>
+                <td><b>WORK EXPERIENCE</b> </td>                                
+              </tr>
+              <tr>
+                <td>Community Relation Manager <br>Gay & Lesbain Elder Housing,LA </td>  
+                <td>06/2011-01/2014 </td><br>                                
+              </tr>
+              <tr>
+                <td>
+                <p>
+                  <ul>
+                    <li>Arranging presentation and pitch desk
+                    </li>
+                    <li>Designing a PR plan and establishing important focus points
+                    </li>
+                    <li>Designing,creating and managing content across multiple communication platform.
+                    </li>
+                    <li>Building relationship with key media players.
+                    </li>
+                  </ul> 
+                </p></td>
+              </tr>
+
+              <tr>
+                <td><b>EDUCATION</b> </td>                                
+              </tr>
+              <tr>
+                <td>Engineering Immersion Program <br>Thinkful,Chicago,IL </td>  
+                <td>11/2018-06/2018 </td>                                
+              </tr>
+              <tr>
+                <td>
+                <p>
+                  Project -focused intensive program with emphasis on Mongo,Express,React and Javascript(MERN) technical stack.<br>
+                  <ul>
+                    <li>Developed a full stack web application, RenewU, using React that allows users to explore various aspects of meditation.
+                      User's progress is stored on a backend created using node and mongo.
+                    </li>
+                    <li>Developed a language learning app,"Foodie Phnetics" using React as front end and node and mongo as backend that stores user data.
+                    </li>
+                    <li>Developed a concierge app,"Pley" for individuals looking fr curated suggestions when visiting new place.
+                    </li>
+                  </ul> 
+                </p>
+              </td>
+              </tr>
+              <tr>
+                <td>BA,English <br>University of california,LA </td>  
+                <td>09/2001-09/2005 </td>                                
+              </tr>
+
+             
+
+              </tr>
+                                        
+          </table>               
+      
+    </div>
+
+</div> 
+    
+  </center>  
+</body>
+</html>
+
+
