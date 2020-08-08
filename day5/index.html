@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body> 
+    <script>
+        var container = document.createElement('div');
+        container.setAttribute('class', 'container ');
+        container.setAttribute('style','width:904px;height:1100px;background-color:white; border:solid black;');
+        
+        var row1 = document.createElement('div');
+        row1.setAttribute('class','row');  
+        row1.setAttribute('style','content:"" ;display: table;clear: both;');  
+
+        var img=document.createElement('img');   
+        img.setAttribute('src','resume.jpeg');
+        img,setAttribute('style','width:900px;height: 290px;');
+
+        row1.append(img);
+        
+        //main content 
+        var leftcolumn = document.createElement('div');
+        leftcolumn.setAttribute('class','row');
+        leftcolumn.setAttribute('style','content:"" ;display: table;clear: both;');
+
+        //first column
+
+        var column1=document.createElement('div');
+        column1.setAttribute('class','column');
+        column1.setAttribute('style','float: left;width: 50%;height:1500px;');
+        //-----------------
+
+        var table1 = document.createElement('table');
+        var tr1 = document.createElement('tr');  
+
+        //----------------
+        var trr1 = document.createElement('tr');
+        
+        var trr1td = document.createElement('td');
+        var script = document.createElement('script');
+        script.setAttribute('src','https://kit.fontawesome.com/a076d05399.js');
+        var icon = document.createElement('i');
+        icon.setAttribute('class','fas fa-user');
+        icon.setAttribute('style','font-size: 15px;')
+        trr1td.innerText='PROFILE';
+
+        let lineBreak = document.createElement('hr');
+        var content = document.createElement('p');
+        content.innerText = 'Innovative optimized solution seeker.Exited to be at the deployment phase of my new career as a web developer. I am ambitious,adventurous,assiduous,animated and an alliteration advocate.';
+
+        trr1td.appendChild(script,icon,lineBreak,content);
+        trr1.appendChild(trr1td);
+
+        var trr2 = document.createElement('tr');
+        var trr2td = document.createElement('td');
+        var script = document.createElement('script');
+        script.setAttribute('src','https://kit.fontawesome.com/a076d05399.js');
+        var icon = document.createElement('i');
+        icon.setAttribute('class','fa fa-flask');
+        icon.setAttribute('style','font-size: 15px;')
+        trr2td.innerText='SKIILS';
+
+        var skillContent = document.createElement('div');
+        skillContent.setAttribute('class', 'text');
+
+        cLabel= document.createElement('label');
+        cLabel.setAttribute('for', 'C');
+        cLabel.innerHTML = 'C &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;'
+
+        cMeter = document.createElement('meter');
+        cMeter.setAttribute('id', 'c')
+        cMeter.setAttribute('value', 5)
+        cMeter.setAttribute('min', 0)
+        cMeter.setAttribute('max', 10);
+        cMeter.innerText = '2 out of 10 ';
+
+        jsLabel= document.createElement('label');
+        jsLabel.setAttribute('for', 'JavaScript');
+        jsLabel.innerHTML = 'JavaScript &ensp;'
+
+        jsMeter = document.createElement('meter');
+        jsMeter.setAttribute('id', 'js')
+        jsMeter.setAttribute('value', 8)
+        jsMeter.setAttribute('min', 0)
+        jsMeter.setAttribute('max', 10);
+        jsMeter.innerText = '8 out of 10';
+
+
+        skillContent.appendChild(clabel,cmeter,jsLabel,jsMeter);
+        trr2td.appendChild(skillContent);
+        trr2.appendChild(trr2td,script,icon);
+
+        var trr3 = document.createElement('tr');
+        var script = document.createElement('script');
+        script.setAttribute('src','https://kit.fontawesome.com/a076d05399.js');
+        var icon = document.createElement('i');
+        icon.setAttribute('class','fa fa-briefcase');
+        icon.setAttribute('style','font-size: 15px;')
+        trr3.innerText='WORK EXPERIENCE';
+
+        trr3.appendChild(script,icon);
+
+        var trr4 = document.createElement('tr');
+        var trr4td = document.createElement('td');        
+        trr4td.innerText='Event Manager C3 presents,Washington DC ';
+
+        var trr4td1 = document.createElement('td');
+        trr4td1.setAttribute('style', 'float:right');
+        trr4td1.innerText = '20/12/2020';
+
+        trr4.appendChild(trr4td,trr4td1);
+
+        var trr5 = document.createElement('tr');
+        var trr5td = document.createElement('td');
+
+        let experience = document.createElement('p');        
+
+        let unorderdList = document.createElement('ul');
+        let list1 = document.createElement('li');
+        list1.innerText = "Lead and execute all phase of event planning and production spanning committee recruitment,training,vendor relationship and onsite facilitation."
+
+        let list2 = document.createElement('li');
+        list2.innerText = "Bought new business to organisation through relentless networking and stewardship which helped the company win the bid for the state department summit on the Middle east.";
+
+        let list3 = document.createElement('li');
+        list3.innerText = "Exercise fiscal control over budget creation,tracking and reporting.Collaborate with employees at all organisational levels to cohesive operations."
+
+        unorderdList.append(list1, list2, list3);
+        experience.append(unorderdList);
+
+        trr5td.appendChild(experience);
+        trr5.appendChild(trr5td);              
+
+        tr.appendChild(trr1,trr2,trr3,trr4,trr5);
+        table1.appendChild(tr);
+        column1.appendChild(table1);
+        leftcolumn.appendChild(column1);
+
+        var middlecolumn = document.createElement('div');
+        middlecolumn.setAttribute('class','column');
+        middlecolumn.setAttribute('style','float: left;width: 50%;height:1500px;border-left: 2px solid lightgrey;height: 750px;position: absolute;left: 50%; margin-left: -3px; ');
+
+        //right side
+
+        var rightcolumn = document.createElement('div');
+        rightcolumn.setAttribute('class','column');
+        rightcolumn.setAttribute('style','float: left;width: 50%;height:1500px;');
+
+        var table2 = document.createElement('table');
+        var tr2 = document.createElement('tr');
+
+        var tr2tr =document.createElement('tr');
+        var t2td = document.createElement('td');
+        var script = document.createElement('script');
+        script.setAttribute('src','https://kit.fontawesome.com/a076d05399.js');
+        var icon = document.createElement('i');
+        icon.setAttribute('class','fa fa-briefcase');
+        icon.setAttribute('style','font-size: 15px;')
+        t2td.innerText='WORK EXPERIENCE';
+
+        t2td.appendChild(script,icon);
+        tr2tr.appendChild(t2td);
+
+        var tr2tr2 = document.createElement('tr');
+        var tr2td1 = document.createElement('td');        
+        tr2td1.innerText='Community Relation Manager Gay & Lesbain Elder Housing,LA ';
+
+        var tr2td2 = document.createElement('td');
+        tr2td2.setAttribute('style', 'float:right');
+        tr2td2.innerText = '06/2011-01/2014 ';
+
+        tr2tr2.appendChild(tr2td1,tr2td2);
+
+        var tr2tr3 = document.createElement('tr');
+        var tr3td = document.createElement('td');
+
+        let experience = document.createElement('p');        
+
+        let unorderdList = document.createElement('ul');
+        let list1 = document.createElement('li');
+        list1.innerText = "Arranging presentation and pitch desk";
+
+        let list2 = document.createElement('li');
+        list2.innerText = "Designing a PR plan and establishing important focus points";
+
+        let list3 = document.createElement('li');
+        list3.innerText = "Designing,creating and managing content across multiple communication platform.";
+
+        unorderdList.append(list1, list2, list3);
+        experience.append(unorderdList);
+
+        tr3td.appendChild(experience);
+        tr2tr3.appendChild(tr3td);  
+
+        var tr2tr4 = document.createElement('tr');
+        var tr4td = document.createElement('td');
+        var script = document.createElement('script');
+        script.setAttribute('src','https://kit.fontawesome.com/a076d05399.js');
+        var icon = document.createElement('i');
+        icon.setAttribute('class','fas fa-user-graduate');
+        icon.setAttribute('style','font-size: 15px;')
+        tr4td.innerText='EDUCATION';       
+
+        tr4td.appendChild(script,icon);
+
+        var tr2tr5 = document.createElement('tr');
+        var tr5td = document.createElement('td');        
+        tr5td.innerText='Engineering Immersion Program Thinkful,Chicago,IL ';
+
+        var tr5td2 = document.createElement('td');
+        tr5td2.setAttribute('style', 'float:right');
+        tr5td2.innerText = '11/2018-06/2018';
+
+        tr2tr5.appendChild(tr5td,tr5td2);
+
+        var tr2tr6 = document.createElement('tr');
+        var tr6td = document.createElement('td');
+
+        var education = document.createElement('p');        
+
+        var unorderdListEd = document.createElement('ul');
+        var list1Ed = document.createElement('li');
+        list1Ed.innerText = "Developed a full stack web application, RenewU, using React that allows users to explore various aspects of meditation.User's progress is stored on a backend created using node and mongo."
+
+        var list2Ed = document.createElement('li');
+        list2Ed.innerText = "Developed a language learning app,Foodie Phnetics using React as front end and node and mongo as backend that stores user data."
+
+        var list3Ed = document.createElement('li');
+        list3Ed.innerText = "Developed a concierge app,Pley for individuals looking fr curated suggestions when visiting new place."
+
+        unorderdListEd.append(list1Ed, list2Ed, list3Ed);
+        education.append(unorderdListEd);
+        EdContent.append(education);
+        tr6td.appendChild(experience);
+        tr2tr6.appendChild(tr6td);  
+      
+        tr2.appendChild(tr2tr,tr2tr2,tr2tr3,tr2tr4,tr2tr5,tr2tr6);
+        table2.appendChild(tr2);
+        rightcolumn(table2);
+
+        container.append(row1,leftcolumn,middlecolumn,rightcolumn);        
+        document.body.append(container);
+    </script>
+</body>
+</html>
