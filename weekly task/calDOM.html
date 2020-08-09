@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Calculator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 400px;  
+    padding-left: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type="button"] 
+{ 
+border: solid blue 1px; 
+justify-content: center;
+width:max-content;
+padding:10px 15px;
+display: inline-block;
+align-items: center;
+width: 100%;
+} 
+
+input[type="text"] 
+{ 
+border: solid blue 1px; 
+justify-content: center;
+width:100% ;
+text-align: right;
+} 
+.sec1 {
+  float: left;
+  width: 60%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+}
+.sec2 {
+  float: left;
+  padding: 20px;
+  width: 40%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+</style>
+</head>
+<body>
+    <script>
+        var header = document.createElement('h2');
+        header.setAttribute('class', 'title ');
+        header.innerText ="Calculator";        
+
+        var section = document.createElement('section');
+        var table1 = document.createElement('table');
+        table1.setAttribute('class','sec1');
+        table1.setAttribute('border','1');
+
+        var t1tr1 = document.createElement('tr');
+        var tr1td = document.createElement('td');
+        tr1td.setAttribute('colspan','3');
+
+        var input = document.createElement('input');
+        input.setAttribute('type','text');
+        input.setAttribute('id','result');
+
+        tr1td.append(input);
+        t1tr1.append(tr1td);
+
+        var t1tr2 = document.createElement('tr');
+        var tr2td1 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','7');
+        input.setAttribute('onclick',"dis('7')");
+        tr2td1.append(input);
+
+        var tr2td2 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','8');
+        input.setAttribute('onclick',"dis('8')");
+        tr2td2.append(input);
+
+        var tr2td3 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','9');
+        input.setAttribute('onclick',"dis('9')");
+        tr2td3.append(input);
+        t1tr2.append(tr2td1,tr2td2,tr2td3);
+
+        var t1tr3 = document.createElement('tr');
+        var tr3td1 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','4');
+        input.setAttribute('onclick',"dis('4')");
+        tr3td1.append(input);
+
+        var tr3td2 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','5');
+        input.setAttribute('onclick',"dis('5')");
+        tr3td2.append(input);
+
+        var tr3td3 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','6');
+        input.setAttribute('onclick',"dis('6')");
+        tr3td3.append(input);
+        t1tr3.append(tr3td1,tr3td2,tr3td3);
+
+        var t1tr4 = document.createElement('tr');
+        var tr4td1 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','1');
+        input.setAttribute('onclick',"dis('1')");
+        tr4td1.append(input);
+
+        var tr4td2 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','2');
+        input.setAttribute('onclick',"dis('2')");
+        tr4td2.append(input);
+
+        var tr4td3 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','3');
+        input.setAttribute('onclick',"dis('3')");
+        tr4td3.append(input);
+        t1tr4.append(tr4td1,tr4td2,tr4td3);
+
+        var t1tr5 = document.createElement('tr');
+        var tr5td1 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','Delete');
+        input.setAttribute('onclick',"del()");
+        tr5td1.append(input);
+
+        var tr5td2 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','0');
+        input.setAttribute('onclick',"dis('0')");
+        tr5td2.append(input);
+
+        var tr5td3 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','Clear');
+        input.setAttribute('onclick',"clr()");
+        tr5td3.append(input);
+        t1tr5.append(tr5td1,tr5td2,tr5td3);     
+
+        table1.append(t1tr1,t1tr2,t1tr3,t1tr4,t1tr5);
+
+        var table2 = document.createElement('table');
+        table2.setAttribute('class','sec2');
+        table2.setAttribute('border','1');
+
+        var t2tr1 = document.createElement('tr');
+        var tr1td1 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','+');
+        input.setAttribute('onclick',"dis('+')");
+        tr1td1.append(input);
+
+        var tr1td2 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','-');
+        input.setAttribute('onclick',"dis('-')");
+        tr1td2.append(input);
+        t2tr1.append(tr1td1,tr1td2);
+
+        var t2tr2 = document.createElement('tr');
+        var tr2td1 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','*');
+        input.setAttribute('onclick',"dis('*')");
+        tr2td1.append(input);
+
+        var tr2td2 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','/');
+        input.setAttribute('onclick',"dis('/')");
+        tr2td2.append(input);
+        t2tr2.append(tr2td1,tr2td2);
+
+        var t2tr3 = document.createElement('tr');
+        var tr3td1 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','%');
+        input.setAttribute('onclick',"dis('%')");
+        tr3td1.append(input);
+
+        var tr3td2 = document.createElement('td');  
+        var input = document.createElement('input');
+        input.setAttribute('type','button');
+        input.setAttribute('value','=');
+        input.setAttribute('onclick',"solve()");
+        tr3td2.append(input);
+        t2tr3.append(tr3td1,tr3td2);
+
+
+        table2.append(t2tr1,t2tr2,t2tr3);
+
+        section.append(table1,table2); 
+
+        document.body.append(header,section);   
+
+        document.addEventListener('keypress', keyBoardInput)
+
+        function keyboardsolve(key,val) {
+            if((key >=48 && key <= 57) || (key >=42 && key <= 47) || key == 37){
+                document.getElementById("result").value+=val ;
+            }
+        }        
+        
+        function del(){
+            document.getElementById("result").value ="";
+        
+        }
+        function keyBoardInput(event) {
+            if(event.key == 'Enter') solve();
+            if(event.key === "Backspace" || event.key === "Delete") del();
+            else keyboardsolve(event.keyCode,event.key);
+        }
+        //function that display value 
+
+        function dis(val) 
+        { 
+            document.getElementById("result").value+=val ;
+        } 
+        
+        //function that evaluates the digit and return result 
+        function solve() 
+        { 
+            let x = document.getElementById("result").value ;
+            let y = eval(x) ;
+            document.getElementById("result").value = y ;
+        } 
+        
+        //function that clear the display 
+        function clr() 
+        { 
+            document.getElementById("result").value = "" ;
+        } 
+ </script> 
+</body>
+</html>
+
